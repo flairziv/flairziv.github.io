@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的个人主页</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    body {
+      background: linear-gradient(135deg, #1f2937, #4b5563);
+      color: #f3f4f6;
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #93c5fd;
+      margin-bottom: 1rem;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #60a5fa;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+      margin-top: 0.5rem;
+    }
+    nav {
+      margin: 2rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #93c5fd;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #bfdbfe;
+    }
+    section {
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in;
+    }
+    .social {
+      margin-top: 2rem;
+    }
+    .social a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #9ca3af;
+      font-size: 1.8rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .social a:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      animation: fadeIn 1s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://github.com/flairziv/flairziv.github.io/image/20250704203226.png" alt="头像" />
+    <h1>你好，我是FlairZiv</h1>
+    <p>一个热爱技术的开发者 🚀</p>
+  </header>
+  
+  <nav>
+    <a href="#about">关于我</a>
+    <a href="#projects">项目</a>
+    <a href="#contact">联系</a>
+  </nav>
+
+  <section id="about">
+    <h2>👋 关于我</h2>
+    <p>
+      我是一名专注于嵌入式系统、图像识别和机器学习的开发者，喜欢将技术应用到实际项目中。
+      熟悉 C/C++、Python、ROS、OpenCV 等技术。
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>💼 项目展示</h2>
+    <p>
+      - 🔍 YOLOv5/YOLOv8 图像识别系统<br />
+      - 🤖 AT89C52 单片机电子实验项目<br />
+      - 🎯 扩展卡尔曼滤波目标追踪系统<br />
+      - 📊 图书借阅管理系统（MySQL + 存储过程 + 触发器）
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>📬 联系方式</h2>
+    <p>欢迎通过以下方式与我联系：</p>
+    <div class="social">
+      <a href="https://github.com/FlairZiv" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FlairZiv | 使用 HTML + CSS 构建</p>
+  </footer>
+</body>
+</html>
